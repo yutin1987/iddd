@@ -1,8 +1,8 @@
 .producer{ 
-	padding-top:1rem;
 	width:280px;
-	margin:0 auto;
-	
+	position:absolute; left: 50%; 
+	margin-left: - 280px/2; 
+	top:10px;
 	> img { width:100%}
 } 
 .nav ul {
@@ -24,6 +24,7 @@
 
 ul.a { 
 	display: block; 
+	padding-top: 80px;
 	li {
 		width:25%; 
 		display: inline-block; 
@@ -78,8 +79,8 @@ ul.b {
 .nav {    
 	padding:0;
 	text-align: center; 
-	transition:background ease .4s;
-	.producer{ display: none;}
+	transition:background ease .2s;
+	.producer{ display: none; }
 	ul.a {display: none; } 
 	.hanbuger{ display: block; }
 
@@ -92,14 +93,15 @@ ul.b {
 
 .nav.small { 
 	@include susy-breakpoint($padw) {
+
 		background:#fff;//$oldblue; 
+		.producer{ width:150px; position:absolute; margin-left: - 150px/2; left: 50%;top:7px; } 
 	}
-	.producer{ width:80px; padding:8px 0 0; } 
-	ul.a{ 
-		margin:-20px 0 0;
+	ul.a{  
+		padding-top:0;
 		> li > a { 
 			font-size:1rem;
-			padding-bottom: 20px;
+			padding: 17px 0;
 			@extend %nav_lig_link;
 			&:hover {
 				@extend %nav_lig_hover;
@@ -108,10 +110,21 @@ ul.b {
 				@extend %nav_lig_active;
 			}
 		}
-	}
-	 
-	@include susy-breakpoint($padw) {
-	 	.producer{ width:100px;} 
+	} 
+}
+
+.nav.small { 
+	ul.a {  
+
+		> li {
+			width:20%;
+		}
+		:nth-child(2){
+			margin-right: 10%;
+		} 
+		:nth-child(3){
+			margin-left: 10%;
+		} 
 	}
 }
 

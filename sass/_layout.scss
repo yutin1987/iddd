@@ -75,7 +75,7 @@ h2 {
   	@include susy-breakpoint($deskw,$deskw-c) {
     	@include container();
 		max-width:$deskwmax;  
-		h2 { margin:0 0 3rem 0; }
+		h2 { margin:0 0 2rem 0; }
 
   	}
 }
