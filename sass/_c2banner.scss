@@ -77,12 +77,12 @@
 			}
 		}
 		.vedio {
-			width:$deskw*.7+15px;
-			height:$deskw*.7*5/9+20px;
-			padding-top:15px;
+			width:$deskw*.6+25px;
+			height:$deskw*.6*5/9+30px;
+			padding-top:25px;
 			> iframe {
-				width:$deskw*.7;
-				height:$deskw*.7*5/9;
+				width:$deskw*.6;
+				height:$deskw*.6*5/9;
 			}
 		}
 	}
@@ -96,9 +96,9 @@
 			}
 		}
 		.vedio {
-			width:$deskw*.9+15px;
-			height:$deskw*.9*5/9+20px;
-			padding-top:15px;
+			width:$deskw*.9+25px;
+			height:$deskw*.9*5/9+30px;
+			padding-top:25px;
 			iframe {
  				width:$deskw*.9;
 				height:$deskw*.9*5/9;

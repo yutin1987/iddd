@@ -20255,14 +20255,14 @@ ul.turn p.p4 {
   }
   /* line 79, ../sass/_c2banner.scss */
   .banner .vedio {
-    width: 645px;
-    height: 370px;
-    padding-top: 15px;
+    width: 565px;
+    height: 330px;
+    padding-top: 25px;
   }
   /* line 83, ../sass/_c2banner.scss */
   .banner .vedio > iframe {
-    width: 630px;
-    height: 350px;
+    width: 540px;
+    height: 300px;
   }
 }
 @media (min-width: 900px) {
@@ -20280,9 +20280,9 @@ ul.turn p.p4 {
   }
   /* line 98, ../sass/_c2banner.scss */
   .banner .vedio {
-    width: 825px;
-    height: 470px;
-    padding-top: 15px;
+    width: 835px;
+    height: 480px;
+    padding-top: 25px;
   }
   /* line 102, ../sass/_c2banner.scss */
   .banner .vedio iframe {
@@ -20293,7 +20293,7 @@ ul.turn p.p4 {
 
 /* line 1, ../sass/_c3.scss */
 .card {
-  margin: 0.5rem 0;
+  margin: 0;
   box-shadow: none;
   transition: box-shadow .4s;
 }
@@ -20307,7 +20307,14 @@ ul.turn p.p4 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 15, ../sass/_c3.scss */
+/* line 13, ../sass/_c3.scss */
+.type-col {
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+  box-shadow: inset 0 0 10px #d2d2d2;
+}
+
+/* line 19, ../sass/_c3.scss */
 .c3s > .su-container .type-col {
   width: 94.44444%;
   float: left;
@@ -20315,7 +20322,7 @@ ul.turn p.p4 {
   margin-right: 2.77778%;
 }
 @media (min-width: 450px) {
-  /* line 14, ../sass/_c3.scss */
+  /* line 18, ../sass/_c3.scss */
   .c3s > .su-container {
     padding-top: 30px;
     display: table;
@@ -20323,7 +20330,7 @@ ul.turn p.p4 {
     vertical-align: top;
     text-align: center;
   }
-  /* line 24, ../sass/_c3.scss */
+  /* line 28, ../sass/_c3.scss */
   .c3s > .su-container .type-col {
     float: none;
     display: inline-block;
@@ -20332,41 +20339,41 @@ ul.turn p.p4 {
   }
 }
 @media (min-width: 900px) {
-  /* line 36, ../sass/_c3.scss */
+  /* line 40, ../sass/_c3.scss */
   .c3s > .su-container .type-col {
     width: 370px;
     margin: 0 10px 10px;
   }
 }
 
-/* line 40, ../sass/_c3.scss */
+/* line 44, ../sass/_c3.scss */
 .c3s {
   padding-top: 50px;
 }
-/* line 43, ../sass/_c3.scss */
+/* line 47, ../sass/_c3.scss */
 .c3s p {
   font-size: 1rem;
   color: #004876;
   text-align: center;
 }
 @media (min-width: 450px) {
-  /* line 45, ../sass/_c3.scss */
+  /* line 49, ../sass/_c3.scss */
   .c3s p {
     font-size: 1.4rem;
   }
 }
 @media (min-width: 640px) {
-  /* line 40, ../sass/_c3.scss */
+  /* line 44, ../sass/_c3.scss */
   .c3s {
     margin: -30px auto 0;
   }
-  /* line 49, ../sass/_c3.scss */
+  /* line 53, ../sass/_c3.scss */
   .c3s p {
     font-size: 1.8rem;
   }
 }
 @media (min-width: 900px) {
-  /* line 52, ../sass/_c3.scss */
+  /* line 56, ../sass/_c3.scss */
   .c3s p {
     font-size: 2rem;
   }
