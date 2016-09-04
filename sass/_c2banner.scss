@@ -1,16 +1,18 @@
 .vedio{
 	background: url(../images/bg-video.png) center center no-repeat;
-	background-size:100% 100%; 
+	background-size:100% 100%;
+	
 }
 
 .sharetool {
 	background: rgba(3, 27, 49,.2);
 	box-shadow: 0 0 80px rgba(3, 27, 49,1);
 	display: inline-block;
+	margin: $content_tbpd; 
 }
 .banner {
 	position: relative;
-	z-index: 50;
+	z-index: 50; 
 
 	h2 {
 		position:relative;
@@ -19,7 +21,7 @@
 	}
 	> img {
 		display: block;
-		margin:1rem auto;
+		margin:1rem auto; 
 		&.decode { max-width:300px;width:100%;}
 		&.vimg {width:120px; }
 	}

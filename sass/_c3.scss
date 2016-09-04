@@ -10,7 +10,8 @@
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	}
 }
-.su-container {
+
+.c3s > .su-container {
 	.type-col {
 		@include span(2); 
 	}
@@ -24,17 +25,20 @@
 			float: none;
 			display: inline-block;
 			width:80%;	
+			max-width: 400px;
 		}
 	}
-	@include susy-breakpoint($padw) {
- 		.type-col {width:44%; }
-	}
+
+	// @include susy-breakpoint($padw) {
+ // 		.type-col {width:44%; }
+	// }
 	@include susy-breakpoint($deskw) {  
-		.type-col {width:27%; }
+		.type-col {width:370px;margin:0 10px 10px }
 	}
 }
  
 .c3s {
+	padding-top: $no_nav_holder;
 	@extend %bg-oldgray; 
 	p {font-size: 1rem; color: $oldblue; text-align: center; }	
 	@include susy-breakpoint($mobwm) {	 

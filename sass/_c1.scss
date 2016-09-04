@@ -8,20 +8,28 @@
 
 .c1s {  
 	@extend %bg-stars;
-	text-align: center;
-	position: relative;   
 	padding-top: $no_nav_holder;
+	text-align: center;
 	padding-bottom: 230px;
+	position: relative; 
 	.bg_all2 {
 		position: absolute;
-		bottom:-4px;
+		bottom:-$content_tbpd - 4px;
+	}  
+	.su-container {
+		margin-top: 0;padding-top:$content_tbpd;
 	}
-	.su-container { margin-top:-$no_nav_holder; }
-	.c2s.su-container {margin-top: -$no_nav_holder; }
+	.c2s.su-container {
+		padding-top:$content_tbpd+$no_nav_holder;
+	}
+	 
 
-	@include susy-breakpoint($padw) {
-		padding-top: $nav_holder;
-		.c2s.su-container {margin-top: -$nav_holder; }
+	@include susy-breakpoint($padw) { 
+		padding-top: $nav_holder; 
+		.c2s.su-container {
+			margin-top: -$nav_holder;
+			padding-top:$content_tbpd-m+$no_nav_holder;
+		}
 	
 		
 	}

@@ -45,37 +45,37 @@ button.big {
 	text-align: center;
 	p { margin: 0; padding: 1em 0;}
 }
+h2 { 
+	margin:0 0 1rem;
+	>img {
+		display: block;
+		margin: auto; 
+		width:80%;
+		max-width:350px;
+	}
+} 
+
 .su-container {
 	@include container();
 	min-width:$mobws;
-	padding:$content_tbpd+$no_nav_holder $content_lrpd $content_tbpd;
-	margin-top: - $no_nav_holder;
-	h2 { margin:0 0 1rem;
-		>img {display: block;margin: auto; width:80%;max-width:350px;}
-	}
+	padding:$content_tbpd+$no_nav_holder 0 $content_tbpd;
+	margin-top: -$no_nav_holder; 
+	h2 {}
 
   	@include susy-breakpoint($mobwm, $mobwm-c) {
-    	@include container();
-		// min-width:$mobwm;
-		padding:$content_tbpd+$no_nav_holder $content_lrpd $content_tbpd;
-		margin-top: - $no_nav_holder;
+    	@include container();  
 		h2 {}
   	}
   	@include susy-breakpoint($padw, $padw-c) {
-    	@include container();
-		// min-width:$padw;
-		padding:$content_tbpd-m+$nav_holder $content_lrpd $content_tbpd-m;
-		margin-top: - $nav_holder;
+    	@include container(); 
+		padding:$content_tbpd-m+$nav_holder 0 $content_tbpd-m;
+		margin-top: -$nav_holder; 
 		h2 { margin:0 0 2rem 0; }
-
-
   	}
   	@include susy-breakpoint($deskw,$deskw-c) {
     	@include container();
-		max-width:$deskwmax;
-		padding:$content_tbpd-m+$nav_holder $content_lrpd $content_tbpd-m;
-		margin-top: - $nav_holder;
-		h2 { margin:0 0 2rem 0; }
+		max-width:$deskwmax;  
+		h2 { margin:0 0 3rem 0; }
 
   	}
 }
