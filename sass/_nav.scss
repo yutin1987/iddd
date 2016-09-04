@@ -1,0 +1,120 @@
+.producer{ 
+	padding-top:1rem;
+	width:280px;
+	margin:0 auto;
+	
+	> img { width:100%}
+} 
+.nav ul {
+	font-size: 0;  
+	li > a{	
+		font-size: 1rem;
+		text-decoration: none; 
+		font-style: normal;	
+		transition:color ease .2s;
+		@extend %nav_lig_link;
+		&:hover {
+			@extend %nav_lig_hover;
+		}
+		&.am-active {
+			@extend %nav_lig_active;
+		}	
+	}
+}
+
+ul.a { 
+	display: block; 
+	li {
+		width:25%; 
+		display: inline-block; 
+		> a{ 
+			font-size: 1.2rem;
+		    display: block;
+		    padding: 10px 15px;
+		    letter-spacing: 2px;	
+			@extend %nav_d_link;
+			&:hover {
+				@extend %nav_d_hover;
+			}
+			&.am-active {
+				@extend %nav_d_active;
+			}
+		}
+	} 
+}
+ul.b { 
+	padding:50px;
+	display:block;
+	li > a {	
+		font-size: 1.2rem;
+		display: inline-block;
+		text-align: center;
+		border-radius: $radius;
+		padding:15px;
+	} 
+}
+.hanbuger{
+	float: right;
+ 	background: #fff; 
+	button{ 
+		float: right;
+		background: none;
+		border:none;
+		outline: none;
+		background: $oldblue; 
+		> span {
+			width:1.5em; 
+			display: block;
+			border-bottom: 2px solid $oldblue-txt;
+			margin:3px;
+		}
+	}
+	ul.b {display:none;}
+	&:hover {
+		float: none;
+		ul.b {display: block;}
+	}
+}
+.nav {    
+	padding:0;
+	text-align: center; 
+	transition:background ease .4s;
+	.producer{ display: none;}
+	ul.a {display: none; } 
+	.hanbuger{ display: block; }
+
+  	@include susy-breakpoint($padw) {
+  		.producer{display:block;}
+    	ul.a {display: block; }
+		.hanbuger{ display: none; }
+  	}
+}
+
+.nav.small { 
+	@include susy-breakpoint($padw) {
+		background:#fff;//$oldblue; 
+	}
+	.producer{ width:80px; padding:8px 0 0; } 
+	ul.a{ 
+		margin:-20px 0 0;
+		> li > a { 
+			font-size:1rem;
+			padding-bottom: 20px;
+			@extend %nav_lig_link;
+			&:hover {
+				@extend %nav_lig_hover;
+			}
+			&.am-active {
+				@extend %nav_lig_active;
+			}
+		}
+	}
+	 
+	@include susy-breakpoint($padw) {
+	 	.producer{ width:100px;} 
+	}
+}
+
+
+
+

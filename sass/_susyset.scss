@@ -1,0 +1,15 @@
+@import 'susy'; 
+@import 'breakpoint'; 
+$susy: (
+  columns: 2,  
+  gutters:1/8,
+  math: fluid, 
+  output: float,
+  gutter-position: split,
+  
+
+);
+// debug: (image: true),
+$mobwm-c:(2 1/8);         
+$padw-c:(6 1/8);         
+$deskw-c:(6 1/8);           

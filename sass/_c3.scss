@@ -1,0 +1,50 @@
+.card{
+	margin:$ele_gtr-s 0;
+	box-shadow:none;
+	transition:box-shadow .4s;
+	> img {
+		width:100%;
+		display:block;
+	}
+	&:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+}
+.su-container {
+	.type-col {
+		@include span(2); 
+	}
+	@include susy-breakpoint($mobwm) {
+		padding-top:$content_tbpd;
+		display: table;
+	    margin:auto;  
+		vertical-align: top;
+		text-align: center; 
+		.type-col { 
+			float: none;
+			display: inline-block;
+			width:80%;	
+		}
+	}
+	@include susy-breakpoint($padw) {
+ 		.type-col {width:44%; }
+	}
+	@include susy-breakpoint($deskw) {  
+		.type-col {width:27%; }
+	}
+}
+ 
+.c3s {
+	@extend %bg-oldgray; 
+	p {font-size: 1rem; color: $oldblue; text-align: center; }	
+	@include susy-breakpoint($mobwm) {	 
+		p {font-size: 1.4rem; }
+	}
+	@include susy-breakpoint($padw) {
+		margin: -$content_tbpd auto 0;
+		p {font-size: 1.8rem; }
+	}
+	@include susy-breakpoint($deskw) {
+		p {font-size: 2rem; }
+	}
+}

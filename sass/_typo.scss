@@ -1,0 +1,73 @@
+
+// @import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+// font-family: 'cwTeXFangSong', serif; //仿宋體
+
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+// font-family: 'cwTeXHei', sans-serif; //黑體
+
+// @import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+// font-family: 'cwTeXKai', serif; //楷體
+
+// @import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
+// font-family: 'cwTeXMing', serif; //明體
+
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+// font-family: 'cwTeXYen', sans-serif; //原體
+
+// FOUT
+.wf-loading {
+  .f-cinzel,
+  .f-MaterialIcons {
+    visibility: hidden;opacity: 0;
+    color:#aee;
+  }
+}
+.wf-active, .wf-inactive {
+  .f-cinzel,
+  .f-MaterialIcons {
+    visibility:visible; opacity: 1;
+  }
+}
+.wf-inactive {
+  .f-cinzel,
+  .f-MaterialIcons {
+    font-family: serif;
+  }
+}
+
+
+
+// body { font-size: 1.4rem;}
+// h2 {font-size: 2.4em;}
+// p {font-size: 1em}
+// @include susy-breakpoint($mobwm) {
+// body { font-size: 1.4rem;}
+// }
+// @include susy-breakpoint($mobwm) {
+// body { font-size: 1.4rem;}
+// }@include susy-breakpoint($mobwm) {
+// body { font-size: 1.4rem;}
+// }@include susy-breakpoint($mobwm) {
+// body { font-size: 1.4rem;}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

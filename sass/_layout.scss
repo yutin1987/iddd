@@ -1,0 +1,81 @@
+html {
+	background: $oldblue;
+	color:$oldblue-txt;
+	font-family:"cwTeXHei","wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Lucida Grande",Helvetica,Arial,"Droid Sans","Microsoft YaHei",FreeSans,Arimo,"wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3", FontAwesome, sans-serif;
+}
+img {max-width: 100%;}
+ul, ul li { margin: 0;padding:0; list-style: none;}
+::-webkit-input-placeholder { color: rgba($oldblue,.4); }
+::-moz-placeholder { color: rgba($oldblue,.6); }
+:-ms-input-placeholder { color: rgba($oldblue,.6); }
+:-moz-placeholder { color: rgba($oldblue,.6); }
+
+.material-icons {vertical-align: middle; line-height: 1; font-size: 1em;}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+ 
+input.big { font-family: Consolas, "Lucida Console", Monaco, monospace; 
+	}
+input.big,
+button.big {
+	background: none;
+	box-sizing: border-box;
+	border:none;
+	padding:1rem;
+	font-size: 1.4rem;
+	margin:$ele_gtr-s 0;
+	display: block;
+	width: 100%;
+	border-radius: 6px;
+
+
+}
+.sky {
+	position: fixed; top: 0; left: 0;
+	right:0; z-index: 80;
+}
+.footer {
+	font-size: .8rem;
+	text-align: center;
+	p { margin: 0; padding: 1em 0;}
+}
+.su-container {
+	@include container();
+	min-width:$mobws;
+	padding:$content_tbpd+$no_nav_holder $content_lrpd $content_tbpd;
+	margin-top: - $no_nav_holder;
+	h2 { margin:0 0 1rem;
+		>img {display: block;margin: auto; width:80%;max-width:350px;}
+	}
+
+  	@include susy-breakpoint($mobwm, $mobwm-c) {
+    	@include container();
+		// min-width:$mobwm;
+		padding:$content_tbpd+$no_nav_holder $content_lrpd $content_tbpd;
+		margin-top: - $no_nav_holder;
+		h2 {}
+  	}
+  	@include susy-breakpoint($padw, $padw-c) {
+    	@include container();
+		// min-width:$padw;
+		padding:$content_tbpd-m+$nav_holder $content_lrpd $content_tbpd-m;
+		margin-top: - $nav_holder;
+		h2 { margin:0 0 2rem 0; }
+
+
+  	}
+  	@include susy-breakpoint($deskw,$deskw-c) {
+    	@include container();
+		max-width:$deskwmax;
+		padding:$content_tbpd-m+$nav_holder $content_lrpd $content_tbpd-m;
+		margin-top: - $nav_holder;
+		h2 { margin:0 0 2rem 0; }
+
+  	}
+}

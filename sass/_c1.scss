@@ -1,0 +1,32 @@
+.bg_all2 { 
+	left: 0;
+	right: 0;
+	background: url(../images/bg-all2.png) center bottom no-repeat;
+	height: 314px; width: 100%;
+}
+.gamelogo {width: 80%; max-width: 600px; }
+
+.c1s {  
+	@extend %bg-stars;
+	text-align: center;
+	position: relative;   
+	padding-top: $no_nav_holder;
+	padding-bottom: 230px;
+	.bg_all2 {
+		position: absolute;
+		bottom:-4px;
+	}
+	.su-container { margin-top:-$no_nav_holder; }
+	.c2s.su-container {margin-top: -$no_nav_holder; }
+
+	@include susy-breakpoint($padw) {
+		padding-top: $nav_holder;
+		.c2s.su-container {margin-top: -$nav_holder; }
+	
+		
+	}
+}
+ 
+
+
+
