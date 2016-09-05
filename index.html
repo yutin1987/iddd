@@ -52,7 +52,9 @@
 				var email = $('#emailInput').val();
 				if (reg.test(email)) {
 			    var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSd3X_HOlYD1HmFnd23X0ZDfEL-qgxSabdxnkldaVO6oVxAWtQ/formResponse?submit=Submit&entry.1912494112=' + encodeURIComponent(email);
-					$.post(baseURL);
+					$.post(baseURL, function() {
+						alert('XYZ');
+					});
 				}
 			})
 		});
