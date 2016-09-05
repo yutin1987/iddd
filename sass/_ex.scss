@@ -1,0 +1,27 @@
+%nav_lig_hover {color:darken($gold,30%);}
+%nav_lig_active {color:darken($oldgray,0%)}
+%nav_lig_link {color:$oldblue;}
+
+%nav_d_hover {color:darken($gold,30%);}
+%nav_d_active {color:$gold;}
+%nav_d_link {color:#fff;}
+
+%bg-kmt {
+	background: url("../images/bg-kmt.png") center center no-repeat; 
+	background-size:cover; 
+} 
+ 
+%bg-stars {
+	background: url(../images/bg-stars2.png) repeat center;
+	background-attachment: fixed;
+}
+%bg-oldgray {background: url(../images/bg-oldgray.png) repeat center;
+}
+%gradsky { 
+	background: -moz-linear-gradient(top,  rgba(26,44,66,1) 0%, rgba(26,44,66,0.8) 75%, rgba(26,44,66,0) 100%);  
+	background: -webkit-linear-gradient(top,  rgba(26,44,66,1) 0%,rgba(26,44,66,0.8) 75%,rgba(26,44,66,0) 100%);
+	background: linear-gradient(to bottom,  rgba(26,44,66,1) 0%,rgba(26,44,66,0.8) 75%,rgba(26,44,66,0) 100%);  
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2c42', endColorstr='#001a2c42',GradientType=0 );
+}
+ 
+  

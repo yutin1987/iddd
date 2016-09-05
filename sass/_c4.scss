@@ -1,0 +1,205 @@
+.iwant-ppl {
+	position: absolute;
+	bottom:0;
+	width:500px;
+	height:500px;
+	z-index: 100;
+	overflow: hidden;
+	> img { position: relative; width:100%; }
+}
+.biginput {
+	min-width: 280px;
+	max-width: 600px;
+	height:60px;
+	position:relative;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: inset 0 1px 4px rgba(0,0,0,.4);
+	border: 1px solid $oldc;
+	margin: 1em auto;
+	overflow: hidden;
+	input.big, button.big {
+		padding:8px 15px;
+		font-size: 1em;
+		line-height: 1.6em;
+		margin: 0; height:60px;
+		color:$oldblue;
+	}
+	input.big { 
+		background: none;
+		padding-right: 95px;
+	}
+	button.big { 
+		position: absolute; right: 0; top:0;
+		width:80px;
+		height: 60px;
+		color:#fff;
+		background: $oldblue;
+		border-radius: 0 0;
+		> i {font-size: 1.8em; vertical-align: middle;}
+		&:hover { background: lighten($oldblue, 30%);}
+	}
+}
+
+.colfrom-b {
+	z-index: 2; 
+	position: relative;
+	@include span(1.2);
+	// 
+	text-align: left; 
+	font-size: 1rem;
+	h2 { letter-spacing: .1em;}
+	h2 {font-size: 5em; padding-left: .01em;}
+	p{ font-size: 1em; padding-left: .1em; font-weight: normal;
+		>span {display: inline-block;}
+	 }
+	.biginput {margin-left:0; max-width: 500px; }
+}
+
+// .col-from {
+// 	z-index: 2; 
+// 	position: relative;
+// 	@include span(2);
+
+// 	> * {
+// 		margin:.8em 0;
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 	}
+
+// 	h2 {margin-top: 0; }
+// 	button.big {
+// 		color:$oldblue-txt;
+// 		background: rgba( $red, .9);
+// 		transition: background ease .2s;
+// 		&:hover{
+// 			color:$oldblue-txt;
+// 			background:rgba( $red, 1);
+
+// 		}
+// 		&:active, &:focus {
+// 			background:saturate( $red, 20%);
+// 			color:$gold;
+// 		}
+// 	}
+// 	input.big {
+// 		color:$oldblue-txt;
+// 		background: darken( $oldblue, 10%);
+// 		text-align: center;
+// 	}
+// 	input.big,button.big {
+// 		width:90%;
+// 		min-width:180px;
+// 		max-width: 320px;
+// 		opacity: .9;
+// 		outline:none;
+// 	}
+// }
+.footer {
+	position: relative;
+	z-index: 101;
+}
+.c4s {
+	@extend %bg-kmt;
+	background-position: center $no_nav_holder;
+	text-align: center;
+	position: relative; 
+	.su-container {padding-bottom:0; min-width: auto;}
+	.iwant-ppl{
+		height: $rtg_vv;
+	    width: $rtg_vv;
+	    right: 50%;
+	    margin: 0 -100px 0 0;
+		> img { margin:0}
+	}
+	.colfrom-b{
+		@include span(2);
+		margin-bottom:$rtg_vv - 20px;
+		h2 {font-size: 2.2em; text-align: center;}
+		p { font-size: 1em;
+			>span {display: inline;}}
+	}
+	.col-from {
+		z-index: 2;
+		margin-bottom: $rtg_vv - 20px;
+	}
+	@include susy-breakpoint($mobwm){
+		.colfrom-b{
+			@include span(1.8);
+			margin-right: auto;
+			margin-left: auto;
+			float: none;
+			margin-bottom: $rtg_vv - 20px;
+			h2{text-align: center;}
+			p > span{ display: inline-block;}
+		}
+	};
+	@include susy-breakpoint($padw){ 
+		background-position: center $nav_holder;
+
+		.iwant-ppl{
+			height: 430px;
+		    width:$rtg_h43;
+		    right: 0;
+		    margin: 0;
+			> img { margin-right:-$rtg_h43/5;}
+		}
+		.colfrom-b{
+			@include span(1.2);
+			z-index: 105;
+			margin-bottom:0;
+			font-size: 1.2rem;
+			h2 {font-size: 3em; text-align: left;}
+			p { font-size: 1em;
+				> span {display: inline;}
+			}
+		}
+		.col-from {
+			@include span(1.1);
+			margin:50px 0;
+		}
+	}
+	@include susy-breakpoint($deskw){
+		.iwant-ppl{
+			height: $rtg_h43; 
+		    width: $rtg_h43;
+		    right: 0;
+		    margin-right:0;
+			> img { margin-right:-100px;}
+		}
+		.colfrom-b{
+			@include span(1); 
+			margin-bottom:50px; 
+			margin-left: 5%;
+		}
+	}
+
+	@include susy-breakpoint($deskwmax){
+		.iwant-ppl{
+			height: $rtg_hh; 
+		    width: $rtg_hh;
+		    right: 0;
+		    margin-right:0;
+			> img { margin-right:-200px;}
+		}
+	 	 
+		.colfrom-b{ 
+			font-size:1.6rem;
+			@include span(1.5); 
+			margin-top:60px;
+			margin-bottom:80px;
+			h2 {font-size: 4.2em; letter-spacing:.005em;}
+			p >span {display:block;}
+		}
+		.col-from {
+			margin:100px 0;
+		}
+	}
+	@include susy-breakpoint($deskwmax){
+		.iwant-ppl{ 
+		    right: 50%;
+		    margin-right:-$rtg_hh;
+			> img { margin-right:0px;}
+		} 
+	}
+}

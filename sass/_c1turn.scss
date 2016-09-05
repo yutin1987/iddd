@@ -1,0 +1,41 @@
+ul.turn {
+	padding: 0 1em;
+	line-height: 1.4;
+	margin-top:$blo_gtr-s;
+	margin-bottom:$blo_gtr-s;
+	height: 200px;
+	p { font-size: 1.2rem;
+		line-height: inherit;
+		letter-spacing: .15em;
+	    display: inline;
+	    text-shadow: 0 -1px 16px rgba(0,0,0,1);
+	    > span{display: block; }
+		&.p4 {font-size: 1.7em; }
+	}
+	 
+	@include susy-breakpoint($mobwm) {
+		p {
+			font-size:1.6rem; 
+			&.p4 {font-size: 2.2rem; }
+		}
+ 	}
+ 
+	@include susy-breakpoint($padw) {
+		p {
+			font-size: 2.2rem; 
+			&.p4 {font-size: 4rem; }
+		}
+	}
+	 
+	@include susy-breakpoint($deskwmax) {
+		line-height: 3.8rem;
+		p {	
+			font-size: 2.2rem; 
+			span {display: inline; }
+			&.p4 > span {
+				font-size: 4rem;
+				padding:0 .4em;
+			}
+		}
+	}
+}
